@@ -1,6 +1,6 @@
-# Calculadora basica
+# Calculadora básica
 
-Programa en Python con operaciones de suma, resta, multiplicacion y division.
+Programa en Python que permite realizar las operaciones básicas de suma, resta, multiplicación y división.
 
 ## Uso
 
@@ -11,15 +11,15 @@ print(sumar(8, 2))
 print(dividir(8, 2))
 ```
 
-## Practicas de calidad aplicadas
+## Prácticas de calidad aplicadas
 
-1. **Coding standards:** se configuro `ruff` como linter y formateador en `pyproject.toml`. Se ejecuta con `ruff check .` y `ruff format --check .`. Esta practica detecta problemas de estilo, importaciones sin usar y errores simples antes de integrar codigo.
-2. **Pruebas automatizadas:** se incluyeron pruebas con `pytest`, incluso para impedir la division entre cero. Se ejecutan con `pytest` y evitan que una modificacion rompa funciones ya realizadas.
-3. **Pull Request y Code Review:** se debe crear una rama, publicar el proyecto, abrir un PR hacia `main` y dejar un comentario de auto-revision antes de fusionarlo. La revision detecta errores y decisiones incompletas temprano.
+1. **Coding standards:** configuré `ruff` como linter y formateador en `pyproject.toml`, el cual se ejecuta con `ruff check .` y `ruff format --check .`. Esta práctica me ayuda a detectar problemas de estilo, importaciones sin usar y errores sencillos antes de integrar el código.
+2. **Pruebas automatizadas:** incluí pruebas con `pytest`, entre ellas una para evitar la división entre cero. Estas se ejecutan con `pytest` y me permiten asegurarme de que una modificación no rompa funciones que ya estaban funcionando.
+3. **Pull Request y Code Review:** antes de fusionar el proyecto, creé una rama, publiqué los cambios, abrí un PR hacia `main` y dejé un comentario de auto-revisión. Esto ayuda a detectar errores y decisiones incompletas desde una etapa temprana.
 
-Estas practicas se relacionan con lo discutido en clase porque integran y verifican cambios pequenos de manera continua. Asi se evita el enfoque de "Big Bang", en el que todos los cambios se unen al final y los errores producen mas retrabajo.
+Estas prácticas se relacionan con lo visto en clase porque permiten integrar y verificar cambios pequeños de forma continua, evitando el enfoque de "Big Bang", donde todos los cambios se unen al final y los errores terminan generando más retrabajo.
 
-## Comandos de verificacion
+## Comandos de verificación
 
 ```bash
 ruff check .
